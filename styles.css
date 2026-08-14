@@ -26,6 +26,10 @@ button,input,textarea{font:inherit}
 .header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:1.32rem;color:var(--navy);letter-spacing:-.02em;white-space:nowrap}
 .brand-mark{display:grid;place-items:center;color:var(--blue);font-size:1.65rem;line-height:1}
+.brand-image-link{line-height:0}
+.brand-logo{width:auto;max-width:none;height:64px;object-fit:contain}
+.footer-logo{height:74px;border-radius:4px}
+.legal-logo{height:82px;margin-bottom:8px}
 .main-nav{display:flex;align-items:center;gap:28px;font-size:.95rem;font-weight:650;color:#244766}
 .main-nav>a:not(.btn):hover{color:var(--blue)}
 .nav-cta{margin-left:8px}
@@ -133,6 +137,7 @@ textarea{resize:vertical;min-height:120px}
 @media (max-width: 640px){
   .header-inner{height:72px}.main-nav{top:72px}
   .brand{font-size:1.15rem}.brand-mark{font-size:1.45rem}
+  .brand-logo{height:52px}.footer-logo{height:66px}.legal-logo{height:70px}
   .hero{padding-top:20px}.hero-grid{border-radius:20px}
   .hero-copy{padding:36px 24px 30px}.hero-media{min-height:270px}
   h1{font-size:clamp(2.5rem,14vw,3.6rem)}
