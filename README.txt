@@ -19,3 +19,15 @@ Belangrijk vóór livegang:
 2. Controleer de definitieve bedrijfsgegevens en privacytekst.
 3. Het offerteformulier gebruikt momenteel mailto: en opent dus het e-mailprogramma van de bezoeker. Voor een volledig webformulier zonder mailclient moet later een formulierdienst of backend worden gekoppeld.
 4. De huidige beelden zijn lokaal opgenomen in /assets, dus de site is niet afhankelijk van externe stockfoto-links.
+
+
+FASE 2 - DIENSTPAGINA'S
+========================
+Toegevoegd:
+- /airco-installeren/
+- /airco-vervangen/
+- /airco-onderhoud/
+- /airco-storing/
+
+De homepage-kaarten linken nu naar deze pagina's. Iedere pagina heeft een unieke title, meta description, H1, inhoud, stappenplan en FAQ.
+Nog bewust NIET toegevoegd: plaatsnamen, certificeringen, merken, garanties, telefoonnummer en LocalBusiness-schema zolang de echte bedrijfsgegevens niet definitief zijn bevestigd.
