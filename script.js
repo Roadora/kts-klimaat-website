@@ -20,45 +20,68 @@ if (year) year.textContent = new Date().getFullYear();
 
 const form = document.querySelector('#quote-form');
 const status = document.querySelector('#form-status');
-
-// Vul hier later de URL van de gekozen formulierdienst/API in.
-// Zolang deze leeg is, gebruikt de site een mailto-fallback.
-const FORM_ENDPOINT = '';
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@kts-klimaat.nl';
 
 if (form) {
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton ? submitButton.textContent : '';
     const data = new FormData(form);
 
-    if (FORM_ENDPOINT) {
-      if (status) status.textContent = 'Aanvraag wordt verstuurd…';
-      try {
-        const response = await fetch(FORM_ENDPOINT, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (!response.ok) throw new Error('Formulier kon niet worden verstuurd');
-        form.reset();
-        if (status) status.textContent = 'Bedankt. Je aanvraag is verzonden naar KTS-Klimaat.';
-      } catch (error) {
-        if (status) status.textContent = 'Versturen is niet gelukt. Bel 06 19 89 86 19 of mail naar info@kts-klimaat.nl.';
-      }
-      return;
+    const payload = {};
+    data.forEach((value, key) => {
+      payload[key] = value;
+    });
+
+    // Zorg dat antwoorden op de aanvraag direct naar het e-mailadres
+    // van de aanvrager kunnen worden gestuurd.
+    payload._replyto = payload.email || '';
+
+    if (status) {
+      status.className = 'form-status is-loading';
+      status.textContent = 'Aanvraag wordt veilig verstuurd…';
     }
 
-    const subject = encodeURIComponent('Offerteaanvraag via kts-klimaat.nl');
-    const body = encodeURIComponent([
-      `Naam: ${data.get('naam') || ''}`,
-      `Telefoon: ${data.get('telefoon') || ''}`,
-      `E-mail: ${data.get('email') || ''}`,
-      `Woonplaats: ${data.get('woonplaats') || ''}`,
-      '',
-      'Vraag / situatie:',
-      `${data.get('bericht') || ''}`
-    ].join('\n'));
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Bezig met versturen…';
+    }
 
-    if (status) status.textContent = 'Je e-mailprogramma wordt geopend. Liever direct contact? Bel 06 19 89 86 19.';
-    window.location.href = `mailto:info@kts-klimaat.nl?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || result.success === 'false' || result.success === false) {
+        throw new Error(result.message || 'Formulier kon niet worden verstuurd');
+      }
+
+      form.reset();
+      if (status) {
+        status.className = 'form-status is-success';
+        status.textContent = 'Bedankt. Je aanvraag is verzonden naar KTS-Klimaat. We nemen zo snel mogelijk contact met je op.';
+      }
+    } catch (error) {
+      if (status) {
+        status.className = 'form-status is-error';
+        status.textContent = 'Versturen is niet gelukt. Bel 06 19 89 86 19 of mail naar info@kts-klimaat.nl.';
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+    }
   });
 }

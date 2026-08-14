@@ -229,3 +229,10 @@ textarea{resize:vertical;min-height:120px}
 .section-more-link{margin-top:22px}
 @media(max-width:900px){.contact-cards,.about-info-grid{grid-template-columns:1fr}.simple-hero-card{padding:46px 38px}}
 @media(max-width:640px){.simple-page-hero{padding-top:8px}.simple-hero-card{padding:36px 24px;border-radius:20px}.simple-hero-card h1{font-size:clamp(2.15rem,10vw,2.8rem)}.contact-card,.about-info-card{padding:28px 24px}}
+
+/* Offerteformulier */
+.form-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.quote-form .btn:disabled{opacity:.65;cursor:not-allowed;transform:none;box-shadow:none}
+.form-status.is-success{color:#18733b}
+.form-status.is-error{color:#b42318}
+.form-status.is-loading{color:var(--navy)}
