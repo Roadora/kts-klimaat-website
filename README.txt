@@ -31,3 +31,16 @@ Toegevoegd:
 
 De homepage-kaarten linken nu naar deze pagina's. Iedere pagina heeft een unieke title, meta description, H1, inhoud, stappenplan en FAQ.
 Nog bewust NIET toegevoegd: plaatsnamen, certificeringen, merken, garanties, telefoonnummer en LocalBusiness-schema zolang de echte bedrijfsgegevens niet definitief zijn bevestigd.
+
+
+FASE 1 BEDRIJFSGEGEVENS
+========================
+Telefoon: 06 19 89 86 19
+E-mail: info@kts-klimaat.nl
+Werkgebied: heel Nederland
+
+CONTACTFORMULIER
+================
+De frontend is voorbereid op een echte formulier-endpoint via FORM_ENDPOINT in script.js.
+Zolang FORM_ENDPOINT leeg is, opent de website de e-mailclient van de bezoeker als fallback.
+Voor echte verzending rechtstreeks vanaf de website moet een formulierdienst/API of backend worden gekoppeld.
