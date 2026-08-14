@@ -180,3 +180,32 @@ textarea{resize:vertical;min-height:120px}
 .service-cta-section{padding-top:20px}.service-cta{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:38px 42px;border-radius:22px;background:linear-gradient(135deg,#edf6ff,#f9fcff);border:1px solid #dbeafb}.service-cta h2{font-size:2rem;color:var(--navy);margin:0 0 8px}.service-cta p:not(.eyebrow){max-width:710px;color:var(--muted);margin:0}
 @media(max-width:980px){.service-hero-grid{grid-template-columns:1fr}.service-hero-copy{padding:48px 38px}.service-hero-image{min-height:360px}.content-grid{grid-template-columns:1fr;gap:38px}.service-side-card{position:static}.info-grid,.service-process{grid-template-columns:repeat(2,1fr)}.faq-layout{grid-template-columns:1fr;gap:28px}}
 @media(max-width:640px){.breadcrumbs{padding-top:14px}.service-hero-grid{border-radius:20px}.service-hero-copy{padding:38px 24px 30px}.service-hero-image{min-height:260px}.service-hero-copy h1{font-size:clamp(2.25rem,10vw,2.9rem);line-height:1.05}.info-grid,.service-process{grid-template-columns:1fr}.service-cta{padding:28px 22px;align-items:stretch;flex-direction:column}.service-cta .btn{width:100%}}
+
+/* Dienstafbeeldingen: vaste professionele beeldverhouding, geen handmatige uitsnedes */
+.service-card img{
+  width:100%;
+  height:auto;
+  aspect-ratio:3 / 2;
+  object-fit:cover;
+  object-position:center;
+}
+.service-hero-grid{
+  grid-template-columns:.95fr 1.05fr;
+  min-height:430px;
+}
+.service-hero-copy{padding:52px 50px}
+.service-hero-image{min-height:430px}
+.service-hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+@media(max-width:980px){
+  .service-hero-grid{grid-template-columns:1fr;min-height:0}
+  .service-hero-image{min-height:320px}
+}
+@media(max-width:640px){
+  .service-card img{aspect-ratio:16 / 10}
+  .service-hero-image{min-height:240px}
+}
