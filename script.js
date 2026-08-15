@@ -88,3 +88,45 @@ if (form) {
     }
   });
 }
+
+// Compacte mobiele footer: footeronderdelen zijn op kleine schermen inklapbaar.
+const footerMedia = window.matchMedia('(max-width: 700px)');
+const footerSections = document.querySelectorAll('.footer-grid.footer-grid-legal > div:not(:first-child)');
+
+footerSections.forEach((section) => {
+  const heading = section.querySelector(':scope > h2');
+  if (!heading) return;
+
+  const setExpanded = () => {
+    heading.setAttribute('aria-expanded', String(section.classList.contains('is-open')));
+  };
+
+  const toggleSection = () => {
+    if (!footerMedia.matches) return;
+    section.classList.toggle('is-open');
+    setExpanded();
+  };
+
+  heading.addEventListener('click', toggleSection);
+  heading.addEventListener('keydown', (event) => {
+    if (!footerMedia.matches || (event.key !== 'Enter' && event.key !== ' ')) return;
+    event.preventDefault();
+    toggleSection();
+  });
+
+  const syncMode = () => {
+    if (footerMedia.matches) {
+      heading.setAttribute('role', 'button');
+      heading.setAttribute('tabindex', '0');
+      setExpanded();
+    } else {
+      section.classList.remove('is-open');
+      heading.removeAttribute('role');
+      heading.removeAttribute('tabindex');
+      heading.removeAttribute('aria-expanded');
+    }
+  };
+
+  syncMode();
+  footerMedia.addEventListener?.('change', syncMode);
+});
