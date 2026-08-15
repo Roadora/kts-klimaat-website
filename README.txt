@@ -5,7 +5,6 @@ ACTUELE STATUS
 ---------------
 - Responsive statische bedrijfswebsite, live via Vercel op https://kts-klimaat.nl/.
 - GitHub is de bronrepository; pushes naar main worden via Vercel gepubliceerd.
-- Telefoon: 06 19 89 86 19
 - E-mail: info@kts-klimaat.nl
 - Werkgebied: heel Nederland
 - KvK: 42015771

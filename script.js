@@ -78,7 +78,7 @@ if (form) {
     } catch (error) {
       if (status) {
         status.className = 'form-status is-error';
-        status.textContent = 'Versturen is niet gelukt. Bel 06 19 89 86 19 of mail naar info@kts-klimaat.nl.';
+        status.textContent = 'Versturen is niet gelukt. Mail naar info@kts-klimaat.nl.';
       }
     } finally {
       if (submitButton) {
