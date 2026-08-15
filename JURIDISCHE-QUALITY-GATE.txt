@@ -1,0 +1,20 @@
+KTS-KLIMAAT – JURIDISCHE QUALITY GATE
+Datum: 15 augustus 2026
+
+CONTROLE
+- 17 HTML-pagina's gecontroleerd
+- exact 1 H1 per pagina
+- title, meta description en canonical aanwezig op alle pagina's
+- structured-data JSON valide
+- interne links gecontroleerd: 0 kapotte links
+- JavaScript syntax gecontroleerd: groen
+- sitemap bijgewerkt met alle juridische pagina's
+- footer juridisch uitgebreid op alle pagina's
+- geen Google Analytics / Meta Pixel / marketingtracking aangetroffen in de lokale websitecode
+
+BELANGRIJK OPEN PUNT
+- BTW-identificatienummer ontbreekt en moet nog door KTS worden aangeleverd voordat de bedrijfsinformatie juridisch volledig is.
+
+JURIDISCHE AFBAKENING
+- Algemene voorwaarden zijn opgesteld voor reguliere verkoop/installatie/onderhoud/service.
+- Toekomstige huur/verhuur van airco-installaties is bewust uitgesloten en vereist aparte huurvoorwaarden en juridische beoordeling.
