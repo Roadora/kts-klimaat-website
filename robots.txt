@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kts-klimaat.nl/sitemap.xml

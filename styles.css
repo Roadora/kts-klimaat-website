@@ -236,3 +236,40 @@ textarea{resize:vertical;min-height:120px}
 .form-status.is-success{color:#18733b}
 .form-status.is-error{color:#b42318}
 .form-status.is-loading{color:var(--navy)}
+
+/* Fase 3A: FAQ, werkgebied, contact en mobiele acties */
+.workarea-teaser-section{padding:24px 0 82px;background:#fff}
+.workarea-teaser{display:flex;align-items:center;justify-content:space-between;gap:42px;padding:36px 40px;border:1px solid #dbeafb;border-radius:22px;background:linear-gradient(135deg,#edf6ff,#f9fcff)}
+.workarea-teaser h2{margin:0 0 8px;color:var(--navy);font-size:clamp(1.7rem,2.8vw,2.25rem);line-height:1.08;letter-spacing:-.03em}
+.workarea-teaser p:not(.eyebrow){max-width:760px;margin:0;color:var(--muted)}
+.homepage-faq{padding-top:82px}
+.faq-contact-link{display:inline-block;margin-top:12px}
+.centered-intro{margin:14px auto 0;max-width:680px;text-align:center}
+.simple-hero-actions{margin-top:28px}
+.province-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:980px;margin:0 auto}
+.province-grid span{display:flex;align-items:center;min-height:54px;padding:12px 18px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--navy);font-weight:720;box-shadow:0 7px 20px rgba(18,71,117,.045)}
+.workarea-services .info-card{display:flex;flex-direction:column;min-height:205px}
+.workarea-services .text-link{margin-top:auto;padding-top:16px}
+.contact-choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.contact-choice-card{padding:30px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 10px 26px rgba(18,71,117,.055)}
+.contact-choice-card h3{margin:0 0 10px;color:var(--navy);font-size:1.2rem}
+.contact-choice-card p{margin:0 0 18px;color:var(--muted)}
+.mobile-action-bar{display:none}
+@media(max-width:900px){
+  .workarea-teaser{align-items:stretch;flex-direction:column;gap:24px;padding:32px}
+  .workarea-teaser .btn{align-self:flex-start}
+  .province-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-choice-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  body{padding-bottom:72px}
+  .site-footer{padding-bottom:82px}
+  .mobile-action-bar{position:fixed;z-index:100;left:0;right:0;bottom:0;display:grid;grid-template-columns:.82fr 1.18fr;gap:8px;padding:9px max(10px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(8,47,95,.12);backdrop-filter:blur(12px)}
+  .mobile-action-bar a{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:10px;font-size:.93rem;font-weight:800}
+  .mobile-action-call{border:1px solid #9dc7fa;color:var(--blue);background:#fff}
+  .mobile-action-quote{background:var(--blue);color:#fff;box-shadow:0 7px 18px rgba(7,103,232,.18)}
+  .province-grid{grid-template-columns:repeat(2,1fr)}
+  .workarea-teaser-section{padding-bottom:62px}
+  .workarea-teaser{padding:28px 22px}.workarea-teaser .btn{width:100%}
+}
+@media(max-width:430px){.province-grid{grid-template-columns:1fr}}

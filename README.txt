@@ -44,3 +44,14 @@ CONTACTFORMULIER
 De frontend is voorbereid op een echte formulier-endpoint via FORM_ENDPOINT in script.js.
 Zolang FORM_ENDPOINT leeg is, opent de website de e-mailclient van de bezoeker als fallback.
 Voor echte verzending rechtstreeks vanaf de website moet een formulierdienst/API of backend worden gekoppeld.
+
+FASE 3A (15-08-2026)
+- Homepage FAQ toegevoegd.
+- Werkgebiedpagina toegevoegd voor heel Nederland.
+- Contactpagina uitgebreid met duidelijke contactroutes.
+- Mobiele vaste actiebalk toegevoegd: Bellen + Offerte aanvragen.
+- Technische SEO toegevoegd: canonical, robots meta, Open Graph, Twitter Cards, sitemap.xml, robots.txt en structured data.
+- Afbeeldingsafmetingen toegevoegd om layoutverschuiving tijdens laden te beperken.
+
+SEO-DOMEIN
+Canonical URLs en sitemap gebruiken https://kts-klimaat.nl/. Als het definitieve hoofddomein later www.kts-klimaat.nl wordt, moet dit overal consequent worden aangepast.
