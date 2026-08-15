@@ -1,57 +1,56 @@
 KTS-KLIMAAT WEBSITE
 ===================
 
-Bestanden:
-- index.html                hoofdpagina
-- styles.css                volledige styling + responsive layout
-- script.js                 mobiel menu + offerteformulier
-- privacy.html              eenvoudige privacyverklaring
-- assets/                   afbeeldingen en favicon
+ACTUELE STATUS
+---------------
+- Responsive statische bedrijfswebsite voor GitHub Pages / eigen domein.
+- Telefoon: 06 19 89 86 19
+- E-mail: info@kts-klimaat.nl
+- Werkgebied: heel Nederland
+- Offerteformulier: FormSubmit AJAX-koppeling naar info@kts-klimaat.nl.
+- FormSubmit moet eenmalig via de activatiemail worden bevestigd voordat inzendingen binnenkomen.
+- Canonicals en sitemap zijn voorbereid op https://kts-klimaat.nl/.
 
-Openen:
-Dubbelklik op index.html om de site lokaal te bekijken.
+PAGINA'S
+---------
+- /                         Homepage + diensten + FAQ + offerteformulier
+- /airco-installeren/       Airco installeren
+- /airco-vervangen/         Airco vervangen
+- /airco-onderhoud/         Onderhoud & reiniging
+- /airco-storing/           Storingen
+- /over-ons/                Over KTS-Klimaat
+- /contact/                 Contactgegevens en contactroutes
+- /werkgebied/              Werkgebied heel Nederland
+- /privacy.html             Privacyverklaring
 
-Publiceren:
-Deze map kan direct worden geupload naar vrijwel iedere statische webhost, bijvoorbeeld Vercel, Netlify of gewone webhosting.
+TECHNISCHE SEO
+---------------
+Aanwezig:
+- unieke title en meta description per pagina
+- canonical URLs
+- robots meta
+- Open Graph en Twitter Cards
+- Organization / WebSite / Breadcrumb / FAQ structured data waar relevant
+- sitemap.xml
+- robots.txt
 
-Belangrijk vóór livegang:
-1. Vul eventueel een echt telefoonnummer toe in header/footer als dat gewenst is.
-2. Controleer de definitieve bedrijfsgegevens en privacytekst.
-3. Het offerteformulier gebruikt momenteel mailto: en opent dus het e-mailprogramma van de bezoeker. Voor een volledig webformulier zonder mailclient moet later een formulierdienst of backend worden gekoppeld.
-4. De huidige beelden zijn lokaal opgenomen in /assets, dus de site is niet afhankelijk van externe stockfoto-links.
+FORMULIER
+---------
+De homepage gebruikt FormSubmit. script.js verzendt via:
+https://formsubmit.co/ajax/info@kts-klimaat.nl
 
+De exacte formulier-URL wordt automatisch meegestuurd via _url.
+Bij uitgeschakelde JavaScript blijft de normale POST-action in het HTML-formulier beschikbaar.
 
-FASE 2 - DIENSTPAGINA'S
-========================
-Toegevoegd:
-- /airco-installeren/
-- /airco-vervangen/
-- /airco-onderhoud/
-- /airco-storing/
+BELANGRIJK VOOR DEFINITIEVE LIVEGANG
+------------------------------------
+1. Bevestig de eenmalige activatiemail van FormSubmit.
+2. Doe daarna minimaal één echte testaanvraag en controleer ontvangst in info@kts-klimaat.nl.
+3. Koppel het definitieve domein kts-klimaat.nl en activeer HTTPS.
+4. Controleer daarna canonicals, sitemap en Search Console op het definitieve domein.
+5. Voeg KvK/bedrijfsgegevens, certificeringen en merken alleen toe zodra ze definitief zijn bevestigd.
 
-De homepage-kaarten linken nu naar deze pagina's. Iedere pagina heeft een unieke title, meta description, H1, inhoud, stappenplan en FAQ.
-Nog bewust NIET toegevoegd: plaatsnamen, certificeringen, merken, garanties, telefoonnummer en LocalBusiness-schema zolang de echte bedrijfsgegevens niet definitief zijn bevestigd.
-
-
-FASE 1 BEDRIJFSGEGEVENS
-========================
-Telefoon: 06 19 89 86 19
-E-mail: info@kts-klimaat.nl
-Werkgebied: heel Nederland
-
-CONTACTFORMULIER
-================
-De frontend is voorbereid op een echte formulier-endpoint via FORM_ENDPOINT in script.js.
-Zolang FORM_ENDPOINT leeg is, opent de website de e-mailclient van de bezoeker als fallback.
-Voor echte verzending rechtstreeks vanaf de website moet een formulierdienst/API of backend worden gekoppeld.
-
-FASE 3A (15-08-2026)
-- Homepage FAQ toegevoegd.
-- Werkgebiedpagina toegevoegd voor heel Nederland.
-- Contactpagina uitgebreid met duidelijke contactroutes.
-- Mobiele vaste actiebalk toegevoegd: Bellen + Offerte aanvragen.
-- Technische SEO toegevoegd: canonical, robots meta, Open Graph, Twitter Cards, sitemap.xml, robots.txt en structured data.
-- Afbeeldingsafmetingen toegevoegd om layoutverschuiving tijdens laden te beperken.
-
-SEO-DOMEIN
-Canonical URLs en sitemap gebruiken https://kts-klimaat.nl/. Als het definitieve hoofddomein later www.kts-klimaat.nl wordt, moet dit overal consequent worden aangepast.
+AFBEELDINGEN
+-------------
+Zie ASSETS-LICENTIES.txt voor de bron/licentieadministratie van de huidige stockbeelden.
+Vervang stockbeelden later bij voorkeur door eigen KTS-projectfoto's.

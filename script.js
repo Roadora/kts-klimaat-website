@@ -40,6 +40,9 @@ if (form) {
     // Zorg dat antwoorden op de aanvraag direct naar het e-mailadres
     // van de aanvrager kunnen worden gestuurd.
     payload._replyto = payload.email || '';
+    // Geef FormSubmit altijd de exacte live formulier-URL mee.
+    // Dit helpt zowel tijdens GitHub Pages-tests als na koppeling van kts-klimaat.nl.
+    payload._url = window.location.href.split('#')[0].split('?')[0];
 
     if (status) {
       status.className = 'form-status is-loading';
