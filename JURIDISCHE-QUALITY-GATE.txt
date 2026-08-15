@@ -1,20 +1,18 @@
 KTS-KLIMAAT – JURIDISCHE QUALITY GATE
-Datum: 15 augustus 2026
+Versie: 15 augustus 2026
 
-CONTROLE
-- 17 HTML-pagina's gecontroleerd
-- exact 1 H1 per pagina
-- title, meta description en canonical aanwezig op alle pagina's
-- structured-data JSON valide
-- interne links gecontroleerd: 0 kapotte links
-- JavaScript syntax gecontroleerd: groen
-- sitemap bijgewerkt met alle juridische pagina's
-- footer juridisch uitgebreid op alle pagina's
-- geen Google Analytics / Meta Pixel / marketingtracking aangetroffen in de lokale websitecode
+STATUS: GREEN
+HTML-pagina's gecontroleerd: 17
+KvK: 42015771
+BTW-id: NL005439721B36
 
-BELANGRIJK OPEN PUNT
-- BTW-identificatienummer ontbreekt en moet nog door KTS worden aangeleverd voordat de bedrijfsinformatie juridisch volledig is.
+CONTROLES:
+- Exact 1 H1 per HTML-pagina
+- Title, meta description en canonical per pagina
+- Organization structured data is geldige JSON en bevat KvK + btw-id
+- Btw-id zichtbaar in bedrijfsfooter op alle pagina's
+- Bedrijfsgegevens, privacyverklaring en algemene voorwaarden bevatten btw-id
+- Interne links gecontroleerd
+- Sitemap XML parsebaar
 
-JURIDISCHE AFBAKENING
-- Algemene voorwaarden zijn opgesteld voor reguliere verkoop/installatie/onderhoud/service.
-- Toekomstige huur/verhuur van airco-installaties is bewust uitgesloten en vereist aparte huurvoorwaarden en juridische beoordeling.
+Geen fouten gevonden in bovenstaande controles.

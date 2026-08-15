@@ -10,21 +10,20 @@ GEREED IN DEZE UPDATE
 - Klachtenprocedure toegevoegd.
 - Disclaimer toegevoegd.
 - Bedrijfsgegevens en juridisch overzicht toegevoegd.
-- Footer op alle pagina's uitgebreid met juridische links, vestigingsadres en KvK.
+- Footer op alle pagina's uitgebreid met juridische links, vestigingsadres, KvK en btw-id.
 - Offerteformuliertekst aangepast: privacyverklaring lezen i.p.v. 'akkoord met privacyverklaring'.
 - Sitemap bijgewerkt.
-- Organization structured data uitgebreid met adres en KvK.
+- Organization structured data uitgebreid met adres, KvK en btw-id.
 
 NOG NODIG VOOR 100% JURIDISCHE AFWERKING
-1. BTW-identificatienummer (btw-id) van KTS Klimaat toevoegen aan de website. Dit nummer is niet veilig af te leiden en is daarom niet ingevuld.
-2. Controleer of 'KTS Klimaat' exact de naam is zoals ingeschreven in het Handelsregister. Publieke bronnen tonen KTS Klimaat / KvK 42015771 / Trompetstraat 41, 3335 DG Zwijndrecht.
-3. Controleer en bevestig de feitelijke bewaartermijn van losse aanvragen (in deze tekst: 12 maanden) en voer die ook operationeel uit.
-4. Maak met leveranciers waar nodig passende privacy/verwerkersafspraken. FormSubmit is als externe formulierdienst expliciet vermeld.
-5. Als Google Analytics, Meta Pixel, advertentiecookies of andere niet-noodzakelijke tracking wordt toegevoegd: VOORAF cookietoestemming implementeren en cookiebeleid aanpassen.
-6. Als consumenten offertes online/telefonisch/thuis aanvaarden: stuur bij de overeenkomst ook de informatie over bedenktijd en het modelformulier mee. Alleen een websitepagina is niet altijd voldoende voor de contractuele informatieplicht.
-7. Als KTS rechtstreeks online contracten laat sluiten, controleer de actuele regels voor de online herroepingsfunctie/knop.
-8. Voor het toekomstige airco-verhuurmodel: aparte huurvoorwaarden laten opstellen en juridisch beoordelen. De huidige algemene voorwaarden sluiten dit huurconcept bewust uit.
-9. Laat de algemene voorwaarden vóór grootschalig gebruik of bijzondere projecten eenmalig beoordelen door een Nederlandse jurist.
+1. Controleer of 'KTS Klimaat' exact de naam is zoals ingeschreven in het Handelsregister. Publieke bronnen tonen KTS Klimaat / KvK 42015771 / Trompetstraat 41, 3335 DG Zwijndrecht.
+2. Controleer en bevestig de feitelijke bewaartermijn van losse aanvragen (in deze tekst: 12 maanden) en voer die ook operationeel uit.
+3. Maak met leveranciers waar nodig passende privacy/verwerkersafspraken. FormSubmit is als externe formulierdienst expliciet vermeld.
+4. Als Google Analytics, Meta Pixel, advertentiecookies of andere niet-noodzakelijke tracking wordt toegevoegd: VOORAF cookietoestemming implementeren en cookiebeleid aanpassen.
+5. Als consumenten offertes online/telefonisch/thuis aanvaarden: stuur bij de overeenkomst ook de informatie over bedenktijd en het modelformulier mee. Alleen een websitepagina is niet altijd voldoende voor de contractuele informatieplicht.
+6. Als KTS rechtstreeks online contracten laat sluiten, controleer de actuele regels voor de online herroepingsfunctie/knop.
+7. Voor het toekomstige airco-verhuurmodel: aparte huurvoorwaarden laten opstellen en juridisch beoordelen. De huidige algemene voorwaarden sluiten dit huurconcept bewust uit.
+8. Laat de algemene voorwaarden vóór grootschalig gebruik of bijzondere projecten eenmalig beoordelen door een Nederlandse jurist.
 
 BRONNEN GEBRUIKT VOOR DEZE OPZET (controle op 15-08-2026)
 - Autoriteit Persoonsgegevens: recht op informatie/privacyverklaring, bewaartermijnen, cookies en cookiebanners.
